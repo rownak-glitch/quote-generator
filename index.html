@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Quote Generator</title>
+        <link rel="stylesheet" href="quoteStyle.css">
+        <link href="https://fonts.googleapis.com/css?family=Dosis|Montserrat|Six+Caps|Source+Code+Pro&display=swap" rel="stylesheet">
+        <script defer src="quoteJS.js"></script>
+    </head>
+    
+    
+
+    <body onload="newQuote()">
+
+        <div>
+            <h2>Quote Generator</h2>
+            <div class="blue" id="container">
+                <div id="randomQuote">
+            </div>
+        
+        
+        <button class="button bluebutton" onclick="toBlue()"></button>
+        <button class="button yellowbutton" onclick="toYellow()"></button>
+        <button class="button orangebutton" onclick="toOrange()"></button>
+        <button class="button greenbutton" onclick="toGreen()"></button>
+        </div>
+
+
+	    <div class="converterbox">
+            <h2>Unit Converter</h2>
+		    <label>Converter: </label>
+		   	<input type="text" id="valueinput">
+		   	<select id="choice">
+			    <option value="poundtokg">Pounds to Kilograms</option>
+	   	        <option value="kgtopound">Kilograms to Pounds</option>
+	   	    </select>
+		    <button onclick="convert()">Go</button>
+		    <label style="padding-left: 5px"id="outputbox"></label>
+	    </div>
+    <div>
+        <div class="numbersbox">
+            <h2>Play with Numbers</h2>
+            <label>Input Series of Numbers</label>
+            <input type="text" id="numinput" onkeyup ="numberplay()">
+        </div>
+        <div>
+            <label>Max:</label>
+            <label id="maxout"></label>
+        </div>
+        <div>
+            <label>Min:</label>
+            <label id="minout"></label>
+        </div>
+        <div>
+            <label>Sum:</label>
+            <label id="sumout"></label>
+        </div>
+        <div>
+            <label>Average:</label>
+            <label id="avgout"></label>
+        </div>
+        <div>
+            <label>Reverse Order:</label>
+            <label id="reverseout"></label>
+        </div>    
+    </div>
+
+    <div>
+        <div class="textbox">
+        <h2>Numbers Box</h2>
+        <textarea cols="50" rows="10" id="textbox"></textarea>
+        <div>
+            <button onclick="clearall()">Clear It</button>
+            <button onclick="caseconvert()">Capitalize</button>
+            <button onclick="sorttext()">Sort</button>
+            <button onclick="reversetext()">Reverse</button>
+            <button onclick="addNumber()">Add Numbers</button>
+            <button onclick="shuffle()">Shuffle</button>
+        </div>
+        </div>
+    </div>
+    </body>
+</html>
